@@ -11,7 +11,33 @@ app.listen(port, function(){
 });
 
 app.get('/', function(req, res) {
-  var fileName = path.join(__dirname, "client", 'index.html');
+  var fileName = path.join(__dirname, "client", '/index.html');
+  res.sendFile(fileName, function (err) {
+    if (err) {
+      console.log(err);
+      res.status(err.status).end();
+    }
+    else {
+      console.log('Sent:', fileName);
+    }
+  });
+});
+
+app.get('/about', function(req, res) {
+  var fileName = path.join(__dirname, "client", '/about.html');
+  res.sendFile(fileName, function (err) {
+    if (err) {
+      console.log(err);
+      res.status(err.status).end();
+    }
+    else {
+      console.log('Sent:', fileName);
+    }
+  });
+});
+
+app.get('/contact', function(req, res) {
+  var fileName = path.join(__dirname, "client", '/contact.html');
   res.sendFile(fileName, function (err) {
     if (err) {
       console.log(err);
