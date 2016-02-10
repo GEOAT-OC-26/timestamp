@@ -56,6 +56,9 @@ app.get('/:datestring', function(req,res) {
   } else {
     myDate = moment(req.params.datestring, "MMMM D, YYYY");
   }
+app.get(/z/, function(req, res) {
+  res.send('/a/');
+});
 
   if(myDate.isValid()) {
     res.json({
