@@ -1,5 +1,5 @@
-var server = require('express');
-var app = server();
+var express = require('express');
+var app = express();
 var moment = require('moment');
 var fs = require('fs');
 var path = require('path');
@@ -10,9 +10,8 @@ app.listen(port, function(){
   console.log("Listening on port: " + port);
 });
 
-app.use(server.static(__dirname, "client", "/css"));
-app.use(server.static(__dirname, "client", "/img"));
-app.use(server.static(__dirname, "client", "/js"));
+app.use("/client", express.static(__dirname, "client"));
+
 
 app.get('/', function(req, res) {
   var fileName = path.join(__dirname, "client", '/index.html');
