@@ -10,6 +10,8 @@ app.listen(port, function(){
   console.log("Listening on port: " + port);
 });
 
+app.use(server.static('client'));
+
 app.get('/', function(req, res) {
   var fileName = path.join(__dirname, "client", '/index.html');
   res.sendFile(fileName, function (err) {
