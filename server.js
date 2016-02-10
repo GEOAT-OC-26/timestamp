@@ -10,7 +10,7 @@ app.listen(port, function(){
   console.log("Listening on port: " + port);
 });
 
-app.use("/client", express.static(__dirname, "client"));
+//app.use("/client", express.static(__dirname, "client"));
 
 
 app.get('/', function(req, res) {
