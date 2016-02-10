@@ -23,8 +23,8 @@ app.get('/', function(req, res) {
   });
 });
 
-app.get('/about', function(req, res) {
-  var fileName = path.join(__dirname, "client", '/about.html');
+app.get('/user', function(req, res) {
+  var fileName = path.join(__dirname, "client", '/user.html');
   res.sendFile(fileName, function (err) {
     if (err) {
       console.log(err);
@@ -36,8 +36,8 @@ app.get('/about', function(req, res) {
   });
 });
 
-app.get('/contact', function(req, res) {
-  var fileName = path.join(__dirname, "client", '/contact.html');
+app.get('/examples', function(req, res) {
+  var fileName = path.join(__dirname, "client", '/examples.html');
   res.sendFile(fileName, function (err) {
     if (err) {
       console.log(err);
