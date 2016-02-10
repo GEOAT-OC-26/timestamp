@@ -10,7 +10,7 @@ app.listen(port, function(){
   console.log("Listening on port: " + port);
 });
 
-app.use(server.static(__dirname + '/client'));
+app.use(server.static(__dirname, "client", "/color.css"));
 
 app.get('/', function(req, res) {
   var fileName = path.join(__dirname, "client", '/index.html');
