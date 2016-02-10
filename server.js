@@ -11,7 +11,7 @@ app.listen(port, function(){
 });
 
 app.get('/', function(req, res) {
-  var fileName = path.join(__dirname, 'index.html');
+  var fileName = path.join(__dirname, "client", 'index.html');
   res.sendFile(fileName, function (err) {
     if (err) {
       console.log(err);
