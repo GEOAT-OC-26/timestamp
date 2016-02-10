@@ -61,7 +61,7 @@ app.get('/:datestring', function(req,res) {
   if(myDate.isValid()) {
     res.json({
       unix: myDate.format("X"),
-      natural: myDate.format("MM D, YYYY")
+      natural: myDate.format("MMMM D, YYYY")
     });
   } else {
     res.json({
