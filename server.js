@@ -10,6 +10,10 @@ app.listen(port, function(){
   console.log("Listening on port: " + port);
 });
 
+app.use(express.static(__dirname + '/client' + '/css'));
+app.use(express.static(__dirname + '/client' + '/img'));
+app.use(express.static(__dirname + '/client' + '/js'));
+
 app.get('/', function(req, res) {
   var fileName = path.join(__dirname, "client", '/index.html');
   res.sendFile(fileName, function (err) {
