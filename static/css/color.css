@@ -10,6 +10,8 @@ h1{
 p{
     text-align: center;
     color: #666;
+    font-size: 12px;
+    font-family: Times;
 }
 .black{
     background-color: black;

@@ -1,6 +1,6 @@
 API Basejump: Timestamp Microservice
 
-By Rex "SaintPeter" Schrader
+By ctrujillo@thecodecampus.com
 
 For Free Code Camp - API Basejump: Timestamp Microservice
 
@@ -11,4 +11,4 @@ If it does, it returns both the Unix timestamp and the natural language form of 
 If it does not contain a date or Unix timestamp, it returns null for those properties.
 Live Site
 
-http://saintpeter-ts-micro.herokuapp.com
+https://calm-lowlands-83767.herokuapp.com

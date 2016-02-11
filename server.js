@@ -67,13 +67,13 @@ app.get('/:datestring', function(req,res) {
       unix: myDate.format("X"),
       natural: myDate.format("MMMM D, YYYY")
     });
-    res.end("Congratulations! It Works");
+    res.send("Congratulations! It Works");
   } else {
     res.json({
       unix: null,
       natural: null
     });
-    res.end("Please Try Again :)");
+    res.send("Please Try Again :)");
   }
 
 
