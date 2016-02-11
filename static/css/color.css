@@ -1,7 +1,16 @@
-body{
-    background-color: blue;
-}
 h1{
     text-align: center;
-    color: #00ADEE;
+    color: black;
 }
+.blue{
+    background-color: blue;
+}
+p{
+    text-align: center;
+    color: #666;
+}
+
+.container{
+    background-color: green;
+}
+
