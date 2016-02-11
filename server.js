@@ -14,7 +14,7 @@ app.use(express.compress());
 
 app.use(express.static(__dirname + '/static'));
 
-/*
+
 
 app.get('/', function(req, res) {
   var fileName = path.join(__dirname, "static", '/index.html');
@@ -55,7 +55,7 @@ app.get('/examples', function(req, res) {
   });
 });
 
-*/
+
 
 app.get('/:datestring', function(req,res) {
   var myDate;
