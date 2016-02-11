@@ -1,5 +1,7 @@
 $(document).ready(function(){
-    $("#submit").on("click", function(){
-        $("#show").html("<h5>Thank You</h5>")
+    $("#submit").click(function(){
+        $("submit").hide();
+        $("#show").html("<h5>Thank You</h5>");
+        
     })
 })
