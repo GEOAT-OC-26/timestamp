@@ -10,10 +10,14 @@ app.listen(port, function(){
   console.log("Listening on port: " + port);
 });
 
+app.use(express.compress());
+
 app.use(express.static(__dirname + '/static'));
 
+/*
+
 app.get('/', function(req, res) {
-  var fileName = path.join(__dirname, "client", '/index.html');
+  var fileName = path.join(__dirname, "static", '/index.html');
   res.sendFile(fileName, function (err) {
     if (err) {
       console.log(err);
@@ -26,7 +30,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/user', function(req, res) {
-  var fileName = path.join(__dirname, "client", '/user.html');
+  var fileName = path.join(__dirname, "static", '/user.html');
   res.sendFile(fileName, function (err) {
     if (err) {
       console.log(err);
@@ -39,7 +43,7 @@ app.get('/user', function(req, res) {
 });
 
 app.get('/examples', function(req, res) {
-  var fileName = path.join(__dirname, "client", '/examples.html');
+  var fileName = path.join(__dirname, "static", '/examples.html');
   res.sendFile(fileName, function (err) {
     if (err) {
       console.log(err);
@@ -50,6 +54,8 @@ app.get('/examples', function(req, res) {
     }
   });
 });
+
+*/
 
 app.get('/:datestring', function(req,res) {
   var myDate;
