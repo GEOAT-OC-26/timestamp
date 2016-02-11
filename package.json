@@ -5,6 +5,9 @@
   "main": "server.js",
   "repository": "",
   "author": "Mostafa Eweda <mo.eweda@gmail.com>",
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
     "express": "^4.13.4",
     "fs": "0.0.2",

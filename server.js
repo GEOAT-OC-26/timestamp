@@ -10,7 +10,7 @@ app.listen(port, function(){
   console.log("Listening on port: " + port);
 });
 
-//app.use(express.static(path.join(__dirname + '/static')));
+app.use(express.static(path.join(__dirname + '/static')));
 
 app.get('/', function(req, res) {
   var fileName = path.join(__dirname, "static", '/index.html');
@@ -67,11 +67,13 @@ app.get('/:datestring', function(req,res) {
       unix: myDate.format("X"),
       natural: myDate.format("MMMM D, YYYY")
     });
+    res.end("Congratulations! It Works");
   } else {
     res.json({
       unix: null,
       natural: null
     });
+    res.end("Please Try Again :)");
   }
 
 
