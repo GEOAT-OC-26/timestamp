@@ -10,7 +10,7 @@ app.listen(port, function(){
   console.log("Listening on port: " + port);
 });
 
-app.use(express.static(__dirname + '/static'));
+app.use(express.static(path.join(__dirname + '/static')));
 
 app.get('/', function(req, res) {
   var fileName = path.join(__dirname, "static", '/index.html');
