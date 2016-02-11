@@ -11,6 +11,9 @@ p{
     text-align: center;
     color: #666;
 }
+.black{
+    background-color: black;
+}
 
 .container{
     background-color: #3FFFBF;
