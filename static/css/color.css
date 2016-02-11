@@ -3,7 +3,8 @@ h1{
     color: black;
 }
 .blue{
-    background-color: blue;
+    background-color: #BF7F3F;
+    padding-bottom: 100px;
 }
 p{
     text-align: center;
@@ -11,6 +12,6 @@ p{
 }
 
 .container{
-    background-color: green;
+    background-color: #3FFFBF;
 }
 
